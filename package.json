@@ -1,0 +1,11 @@
+{
+  "name": "intellexa-ai",
+  "version": "1.0.0",
+  "description": "Intellexa AI - Unified runner for frontend and backend",
+  "scripts": {
+    "start": "concurrently --kill-others-on-fail --names \"BACKEND,FRONTEND\" --prefix-colors \"cyan,magenta\" \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
